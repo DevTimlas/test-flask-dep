@@ -3,11 +3,9 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-def home_view():
-<<<<<<< HEAD
-		return "<h1> hello, world! </h1>"
-app.run()
-=======
-		return "<h1> hello, world! ... Testing Heroku </h1>"
+def hello():
+	return "Hello Geeks!! from Google Colab"
 
->>>>>>> 76659c0d8a9646e07512a84f61aec633122b0151
+if __name__ == "__main__":
+	app.run()
+
